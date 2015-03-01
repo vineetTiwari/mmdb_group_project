@@ -2,212 +2,10 @@
 @import "bootstrap";
 @import "font-awesome";
 
-#results_title{
-  color:white;
-  text-align: center;
-}
-
 body {
   background: url('guitar.jpg');
   width: 100%;
   height: 100%;
-}
-
-.main-two {
-  background-image: url('albumcovers.jpg');
-  width:100%;
-  height:235px;
-}
-
-#listimage {
-  width:5px;
-  height:5px;
-}
-
-#mainpage2{
-  background-color: #162955;
-  width:100%;
-  height:300px;
-}
-
-#mainpage3{
-  background-color:black;
-  width:100%;
-  height:100px;
-}
-
-#heading2{
-color:white;
-font-size:50px;
-}
-
-#heading3 {
-  color:white;
-}
-
-.fa {
-  margin-top:30px;
-  color:white;
-}
-
-.fa-flag {
-  color:white;
-}
-
-// .navbar {
-// border-radius: 0 !important;
-// background-color:#000000;
-// margin-bottom:0px;
-// }
-
-#navbarname {
-  font-weight:900;
-  font-size:40px;
-  color:#162955;
-}
-
-// #backgroundimage {
-//   width:100%;
-// }
-
-// html {
-//   font-family: 'Lato', sans-serif;
-// }
-
-// h1,h2 {
-//   font-family: 'Lato', sans-serif;
-//   font-weight:900;
-// }
-
-#mainpagetext {
-  font-size:125px;
-  font-weight:900;
-  width: 1100px;
-  color: #031338;
-  color: white;
-}
-
-#homebutton {
-  font-size:15px;
-  color:white;
-  border-color:white;
-  border-style:solid;
-}
-
-#mylogo {
-  width:60px;
-  height:60px;
-}
-
-#userauth { 
-  font-size:17px;
-  float:right;
-  height:48px;
-}
-
-#scootover {
-  position:absolute;
-  top:0;
-  right:0;
-}
-
-.mainheader {
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:1400px;
-  height:300px;
-  margin:-150px 0 0 -700px;
-  border-bottom: 60px;
-  border-top:60px;
-  border-left:0px;
-  border-right:0px;
-  border-style: solid;
-  border-color:#162955 ;
-  background-color: #000000; opacity: 0.9; filter: alpha(opacity=50);
-}
-
-// .btn {
-//   border-style:solid;
-//   border-color:black;
-//   width:500px;
-//   height:auto;
-//   text-align: center;
-//   margin-top:50px;
-//   margin-left:325px;
-//   position:relative;
-//   float:center;
-// }
-
-.devise {
-  position:absolute;
-  top:50%;
-  left:50%;
-  height:400px;
-  width:1200px;
-  margin:-200px 0 0 -600px; //centering div in center of page formula (-1/2 of height,0,0,-1/2 of width)
-  border-bottom: 250px;
-  border-style: solid;
-  border-color:#B0B0B0 ;
-  background-color: #000000; opacity: 0.9; filter: alpha(opacity=50);
-}
-
-// .alert {
-//   padding:0px
-// }
-
- #searchpagemaindiv {
-   height:100vh;
-   width:100%;
-   background-color:black;
-}
-
-#searchimage {
-  background-image: url('mmdb.png');
-  width:350px;
-  height:350px;
-  top:8%;
-  left:40%;
-  position:absolute;
-}
-
-#onlyheadphones{
-  background-image: url('only-headphones.jpg');
-  top:40%;
-  width:640px;
-  height:700px;
-  float:right;
-  border-bottom: 100px;
-}
-
-#searchtext{
-  width:800px;
-  height:200px;
-  color:#B0B0B0;  
-  font-size:75px;
-  font-family: 'Lato', sans-serif;
-  font-weight:900;
-  position:absolute;
-  top:30%;
-  left:30%;
-}
-
-#searchimage2{
-  background-image: url('mmdb_2.png');
-  width:350px;
-  height:350px;
-  top:50%;
-  left:40%;
-  position:absolute;
-
-}
-
-#options{
-  width:1000px;
-  height:30px;
-  top:55%;
-  left:20%;
-  position:absolute;
 }
 
 .form-control {
@@ -218,25 +16,8 @@ font-size:50px;
   font-size: 18px;
 }
 
-.searchbox2{
-  height:109px;
-}
-
-#songname{
-font-size: 15px;
-color:black;
-font-style:bold;
-}
-
-#songartist{
-font-size: 10px;
-font-style: italic;
-color:black;
-}
-
 #songinfo{
-color:black;
-
+  color:black;
 }
 
 .center {
@@ -269,8 +50,12 @@ color:black;
 .navbar-brand {
   font-family: guardian-egyptt, georgia, serif;
   font-weight: 400;
-  color:#9f052a;
+  color: #C35F23;
   font-size: 30px;
+}
+
+.navbar-brand:hover {
+  color:black;
 }
 
 .thumbnail {

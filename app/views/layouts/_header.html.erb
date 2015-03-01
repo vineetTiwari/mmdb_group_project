@@ -16,16 +16,11 @@
           <%if current_user.profile_image_url.present? %>
             <%= image_tag current_user.profile_image_url %>
           <%end%>
+          <%=link_to current_user.name, songs_path %>
+          |
           <%= link_to 'Edit profile', edit_user_registration_path %>
           |
-          <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.name%><span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-              <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
-            </ul>
-          </li>     
+          <%= link_to 'Log out', destroy_user_session_path, method: :delete %>  
         <% else %>
           <li><%=link_to 'Facebook Login', user_omniauth_authorize_path(provider: :facebook)%></li>
           <li><%=link_to 'Twitter Login',user_omniauth_authorize_path(provider: :twitter)%></li>

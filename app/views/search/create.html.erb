@@ -4,9 +4,6 @@
     <h1 id="results_title">Results</h1>
     <hr>
     <div class="col-md-2 well sidebar-well">
-      <p><%=link_to "Go back home", root_path%></p>
-      <p><%=link_to "search again", root_path%></p>
-      <p><%=link_to "my collection", songs_path%></p>
       <p><%=link_to "top songs", ""%></p>
       <p><%=link_to "top artists", ""%></p>
       <p><%=link_to "top albums", ""%></p>
@@ -18,13 +15,13 @@
             <div class="col-md-3">
               <div class="thumbnail"><%=image_tag x.artwork %>
                 <div class="caption">
-                  <p id="songinfo"><%=x.name%></p>
-                  <p id="songinfo"><%=x.artist%></p>
+                  <p id="songinfo">Name: <%=x.name%></p>
+                  <p id="songinfo">Artist: <%=x.artist%></p>
                   <p id="songinfo">Other info:</p>
-                  <p id="songinfo">albumname:<%=x.songalbum%></p>
-                  <p id="songinfo">Songid:<%=x.songid%></p>
-                  <p id="songinfo">artistid:<%=x.artistid%></p>
-                  <p id="songinfo">albumid:<%=x.albumid%></p>
+                  <p id="songinfo">Album name: <%=x.songalbum%></p>
+                  <!-- <p id="songinfo">Songid:<%#=x.songid%></p>
+                  <p id="songinfo">artistid:<%#=x.artistid%></p>
+                  <p id="songinfo">albumid:<%#=x.albumid%></p> -->
                   <%=link_to "Add this Song to my Collection", 
                   songs_path(:name => x.name, :artist => x.artist, 
                   :artwork => x.artwork, :songalbum => x.songalbum,
