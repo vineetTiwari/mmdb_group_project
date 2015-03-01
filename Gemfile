@@ -17,7 +17,7 @@ ruby '2.2.0'
   gem 'omniauth-facebook'
   gem 'stripe'
   gem 'bootstrap-sass', '~> 3.3.3'
-  gem 'rdio_api', git: "git@github.com:anilv/rdio_api.git"
+  gem 'rdio_api'
   gem 'ratyrate'
   gem 'font-awesome-rails'
 
