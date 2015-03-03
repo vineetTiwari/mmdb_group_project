@@ -8,6 +8,25 @@ body {
   height: 100%;
 }
 
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight:900;
+}
+
+#twitterbtn{
+  width:200px;
+  height:40px;
+}
+
+#facebookbtn{
+  width:200px;
+  height:40px;
+}
+
 .form-control {
   margin:0px;
   width: 100%;
@@ -44,10 +63,9 @@ body {
 }
 
 .navbar-brand {
-  font-family: guardian-egyptt, georgia, serif;
-  font-weight: 400;
-  color: #C35F23;
-  font-size: 30px;
+  font-weight: 900;
+  // color: #C35F23;
+  font-size: 20px;
 }
 
 .navbar-brand:hover {
