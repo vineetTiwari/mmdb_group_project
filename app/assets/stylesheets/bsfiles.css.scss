@@ -8,6 +8,16 @@ body {
   height: 100%;
 }
 
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight:900;
+}
+
+
 .form-control {
   margin:0px;
   width: 100%;
@@ -47,12 +57,6 @@ body {
   border-color: rgba(248, 248, 248, 0.75);
 }
 
-.navbar-brand {
-  font-family: guardian-egyptt, georgia, serif;
-  font-weight: 400;
-  color: #C35F23;
-  font-size: 30px;
-}
 
 .navbar-brand:hover {
   color:black;
