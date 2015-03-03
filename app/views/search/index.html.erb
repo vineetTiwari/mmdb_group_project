@@ -1,7 +1,6 @@
-<h1 class="center mainheader"> mymusicdatabase.</h1>
+<h1 class="center mainheader"> mymusicdatabase.</h1><hr>
 <h2 class="center mainheader2"> search all your favourite songs below</h1>
 
-<div class="backgroundimage">
   <div class="well index-well">  
     <%= form_tag url: submit_search_path, method: :post do %>
       <div class="row">
@@ -18,7 +17,6 @@
         </div>
     <%end%>
   </div>
-</div>
 <%= link_to "Donate", new_charge_path, class:"btn btn-success" %>
 <%= link_to "Whats Trending?", trending_index_path%>
 
