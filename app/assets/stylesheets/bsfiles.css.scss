@@ -10,13 +10,6 @@ body {
 }
 
 
-.mainheader{
-  color:white;
-  font-size:40px;
-  // margin-top:100px;
-}
-
-
 html {
   font-family: 'Lato', sans-serif;
 }
@@ -25,6 +18,26 @@ h1,h2 {
   font-family: 'Lato', sans-serif;
   font-weight:900;
 }
+
+
+.mainheader{
+  color:white;
+  font-size:60px;
+  margin-top:0px;
+}
+
+.mainheader2{
+  font-size:20px;
+  color:white;
+  margin-top:0px;
+}
+
+.backgroundimage{
+  width:100%;
+  background-image:url('record.jpg');
+  
+}
+
 
 #twitterbtn{
   width:200px;
@@ -57,7 +70,7 @@ h1,h2 {
   background-color: rgba(248, 248, 248, 0.51);
   border-color: rgba(248, 248, 248, 0.51);
   margin-bottom: 200px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .charge-well {
