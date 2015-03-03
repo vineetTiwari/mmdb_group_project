@@ -24,10 +24,6 @@ body {
   text-align: center;
 }
 
-.center {
-  text-align: center;
-}
-
 .index-well {
   padding: 53px;
   background-color: rgba(248, 248, 248, 0.51);
@@ -58,6 +54,10 @@ body {
   color:black;
 }
 
+.navbar {
+  border-radius: 0px;
+}
+
 .thumbnail {
   background-color: rgba(248, 248, 248, 0.75);
 }
@@ -65,4 +65,12 @@ body {
 td > img {
   width: 80px;
   height: 80px;
+}
+
+tr > td {
+  background: rgba(248, 248, 248, 0.70);
+}
+
+.fa-music {
+  font-size: 30px;
 }
