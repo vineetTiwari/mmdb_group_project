@@ -1,13 +1,31 @@
 <!-- all api results(rdio::song objects) -->
-<div class="container">
-  <div class="row">
-    <h1 id="results_title">Results</h1>
-    <hr>
+<a href="#menu" class="menu-link">&#9776;</a>
+
+<nav id="menu" class="panel" role="navigation">
+
+
     <div class="col-md-2 well sidebar-well">
       <p><%=link_to "top songs", ""%></p>
       <p><%=link_to "top artists", ""%></p>
       <p><%=link_to "top albums", ""%></p>
     </div>
+
+  </nav>
+
+
+  <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+
+<div class="container">
+  <div class="row">
+    <h1 id="results_title">Results</h1>
+    <hr>
+
+
+
     <div class="col-md-10">
       <div class="row">
         <%if @result.present? %>
