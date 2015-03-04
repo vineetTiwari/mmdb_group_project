@@ -16,7 +16,6 @@
         <%if user_signed_in? %>
           <%=link_to current_user.name, songs_path %>
           <% else %>
-        <% else %>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Enter
           </button>
