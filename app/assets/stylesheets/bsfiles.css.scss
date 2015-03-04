@@ -13,6 +13,10 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+.navbar{
+  margin-bottom:0px;
+}
+
 .mainheader{
   color:white;
   font-size:60px;
@@ -26,6 +30,16 @@ html {
   margin-top:0px;
 }
 
+////////////--side bar stuff--////////////////////
+
+#menuToggle{
+  display:none;
+}
+
+#menu-icon{
+  color:white;  
+  float:right;
+}
 
 #slideinmenu{
   width: 240px;
@@ -41,6 +55,18 @@ html {
 
 #menuToggle:checked ~ #slideinmenu{
   position: absolute; left:0;
+}
+
+#mainpagediv{
+  position: relative; left:0;
+}
+
+#menuToggle:checked ~ #mainpagediv{
+  left: 240px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out; 
 }
 
 /////////////////////////////////////////////

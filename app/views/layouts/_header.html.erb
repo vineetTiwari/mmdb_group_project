@@ -1,26 +1,26 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default"> 
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+              data-toggle-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span> 
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
       </button>
       <%=link_to 'mmdb', root_path, class:"navbar-brand" %>
-      
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-         <%=link_to current_user.name, songs_path %>
+        <%if user_signed_in? %>
+          <%=link_to current_user.name, songs_path %>
           <% else %>
-          <li> <%=link_to image_tag('fbbtn.jpg', :id => 'facebookbtn'), user_omniauth_authorize_path(provider: :facebook)%></li>
+          <li> <%=link_to image_tag('fbbtn.jpg', :id => 'facebookbtn'),   user_omniauth_authorize_path(provider: :facebook)%></li>
           <li><%=link_to image_tag('twitterbtn.jpg', :id => 'twitterbtn'), user_omniauth_authorize_path(provider: :twitter)%></li>
           <li><%= link_to 'Log in', new_user_session_path %></li>
           <li><%= link_to 'Sign up', new_user_registration_path %></li>
-        <% end %>
+        <%end%>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
