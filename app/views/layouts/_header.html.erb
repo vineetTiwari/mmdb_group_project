@@ -8,22 +8,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%=link_to 'mmdb', root_path, class:"navbar-brand" %>
-      
+      <%=link_to 'mymusicdatabase.', root_path, class:"navbar-brand" %>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-         <%=link_to current_user.name, songs_path %>
-          <% else %>
-          <li> <%=link_to image_tag('fbbtn.jpg', :id => 'facebookbtn'), user_omniauth_authorize_path(provider: :facebook)%></li>
-          <li><%=link_to image_tag('twitterbtn.jpg', :id => 'twitterbtn'), user_omniauth_authorize_path(provider: :twitter)%></li>
-          <li><%= link_to 'Log in', new_user_session_path %></li>
-          <li><%= link_to 'Sign up', new_user_registration_path %></li>
+          <%if current_user.profile_image_url.present? %>
+            <%= image_tag current_user.profile_image_url %>
+          <%end%>
+          <%=link_to current_user.name, songs_path %>
+          |
+          <%= link_to 'Edit profile', edit_user_registration_path %>
+          |
+          <%= link_to 'Log out', destroy_user_session_path, method: :delete %>  
+        <% else %>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Enter
+          </button>
+          <%= render 'devise/sessions/form' %>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 
 
