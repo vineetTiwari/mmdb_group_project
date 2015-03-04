@@ -9,11 +9,9 @@ body {
   height: 100%;
 }
 
-
 html {
   font-family: 'Lato', sans-serif;
 }
-
 
 .mainheader{
   color:white;
@@ -27,6 +25,25 @@ html {
   color:white;
   margin-top:0px;
 }
+
+
+#slideinmenu{
+  width: 240px;
+  height:100%;
+  position: absolute;
+  background : gray;
+  left: -240px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  }
+
+#menuToggle:checked ~ #slideinmenu{
+  position: absolute; left:0;
+}
+
+/////////////////////////////////////////////
 
 
 #twitterbtn{
@@ -59,7 +76,7 @@ html {
   padding: 53px;
   background-color: rgba(248, 248, 248, 0.51);
   border-color: rgba(248, 248, 248, 0.51);
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-top: 50px;
 }
 
@@ -78,6 +95,7 @@ html {
   font-weight: 900;
   // color: #C35F23;
   font-size: 20px;
+  padding-left:65px;
 }
 
 .navbar-brand:hover {
