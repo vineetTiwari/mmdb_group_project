@@ -30,6 +30,7 @@ html {
   margin-top:0px;
 }
 
+
 ////////////--side bar stuff--////////////////////
 
 #menuToggle{
@@ -37,24 +38,32 @@ html {
 }
 
 #menu-icon{
-  color:white;  
+  // color:white;  
   float:right;
 }
 
 #slideinmenu{
   width: 240px;
-  height:100%;
+  height:540px;
+  // height:100%;
   position: absolute;
-  background : gray;
+  background-color: black;
   left: -240px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
+    // z-index: 99;
+  top:51px;
+  text-align: center; 
+  color:white;
+
   }
 
 #menuToggle:checked ~ #slideinmenu{
-  position: absolute; left:0;
+  position: absolute; left:-1;
+  width: 240px;
+  height:540px;
 }
 
 #mainpagediv{
