@@ -17,6 +17,7 @@ html {
   margin-bottom:0px;
 }
 
+
 .mainheader{
   color:white;
   font-size:60px;
@@ -40,6 +41,7 @@ html {
 #menu-icon{
   // color:white;  
   float:right;
+  cursor: pointer;
 }
 
 #slideinmenu{
@@ -67,11 +69,13 @@ html {
 }
 
 #mainpagediv{
-  position: relative; left:0;
+  position: absolute; 
+  margin-left:100px;
 }
 
 #menuToggle:checked ~ #mainpagediv{
-  left: 240px;
+  position: absolute;
+  margin-left: 540px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
