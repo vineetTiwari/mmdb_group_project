@@ -1,0 +1,43 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-md-6">
+          <li> <%=link_to image_tag('fbbtn.jpg', :id => 'facebookbtn'), user_omniauth_authorize_path(provider: :facebook)%></li>
+          <li><%=link_to image_tag('twitterbtn.jpg', :id => 'twitterbtn'), user_omniauth_authorize_path(provider: :twitter)%></li>
+          <div class="form-group">
+            <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-default" %>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <%= form_for((@user || User.new), url: session_path(:user)) do |f| %>
+              <div class="form-group">
+                <%= f.label :email %> 
+                <%= f.email_field :email, autofocus: true, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.label :password %> 
+                <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
+              </div>
+              <div class="form-group">
+                <%= f.submit "Sign in", class: "btn btn-primary" %>
+              </div>
+              <div class="form-group">
+                <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-default" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
