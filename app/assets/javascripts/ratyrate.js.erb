@@ -26,8 +26,9 @@ $(function(){
       cancel:      $(this).attr('data-cancel'),
       cancelPlace: $(this).attr('data-cancel-place'),
       cancelHint:  $(this).attr('data-cancel-hint'),
-      cancelOn:    $(this).attr('data-cancel-on'),
-      cancelOff:   $(this).attr('data-cancel-off'),
+      cancelOn:    "<%= asset_path('cancel-on.png') %>",
+      cancelOff:   "<%= asset_path('cancel-off.png') %>",
+
       noRatedMsg:  $(this).attr('data-no-rated-message'),
       round:       $(this).attr('data-round'),
       space:       $(this).attr('data-space'),
