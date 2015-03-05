@@ -22,6 +22,10 @@ html {
   color:white;
 }
 
+#mainpagediv{
+  margin-top:100px;
+}
+
 #noresultsmatch{
   color:white;  
 }
@@ -42,7 +46,7 @@ html {
 }
 
 .mainheader{
-  color:gray;
+  color:#3399FF;
   font-size:80px;
   font-weight:900;
   margin-top:60px;
@@ -52,7 +56,7 @@ html {
 .mainheader2{
   font-size:30px;
   font-weight:900;
-  color:#3399FF ;
+  color:gray ;
   margin-top:0px;
   // border:solid 1px white;
 
