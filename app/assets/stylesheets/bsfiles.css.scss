@@ -17,6 +17,11 @@ html {
   margin-bottom:0px;
 }
 
+
+.fa-search-plus{
+  margin-top:20px;
+  cursor: pointer;
+}
 #trending{
   color:#3399FF;
   font-weight:900;
@@ -148,6 +153,7 @@ padding-right:5px;
   // color: #C35F23;
   font-size: 20px;
   padding-left:65px;
+  padding-right:5px;
 }
 
 .navbar-brand:hover {

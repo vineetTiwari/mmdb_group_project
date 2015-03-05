@@ -35,7 +35,7 @@
         <li><%= link_to current_user.name, songs_path %></li>
           <li>   <%=form_tag("/songs", method: "get") do %>
         <%=text_field_tag(:searchmydb) %><br><br>
-        <%=submit_tag("Search My Collection", class:'btn2')  %>
+        <%=submit_tag("Search My Database", class:'btn2')  %>
       <%end%></li>
         <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
         <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
