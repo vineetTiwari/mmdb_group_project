@@ -3,10 +3,7 @@
   <hr>
   <div class="row">
     <div class="col-md-3 inlinedivs well sidebar-well">
-      <%=form_tag("/songs", method: "get") do %>
-        <%=text_field_tag(:searchmydb) %>
-        <%=submit_tag("My Collection") %>
-      <%end%>
+      <h4>My Collection</h4>
       <%= link_to "View as List", songs_path(listing: true) %>
     </div>
     <div class="col-md-9">
