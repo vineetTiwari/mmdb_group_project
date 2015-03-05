@@ -33,6 +33,10 @@
         <li><%= link_to current_user.name, songs_path %></li>
         <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
         <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
+        <li>   <%=form_tag("/songs", method: "get") do %>
+        <%=text_field_tag(:searchmydb) %><br>
+        <%=submit_tag("Search my Collection") %>
+      <%end%></li>
         <span class="sidebartoggle center">&#9776;</span>
 
       <%end%>

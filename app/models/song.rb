@@ -10,6 +10,7 @@ class Song < ActiveRecord::Base
     # link_to "My database", "/songs"
     else
       self.all
+     # "Your collection dosnt have that song! Search our database and add it!"
      #render "sdslfja";
     # redirect_to 
     end
