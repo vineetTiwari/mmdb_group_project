@@ -104,7 +104,7 @@ html {
   right:-250px;
   // margin-right:-251px;
   // margin-top:-510px;
-  background-color:gray;
+  background-color:black;
   position:absolute;
   top:0px;
 }
@@ -114,10 +114,14 @@ html {
   width:100vw;
 }
 
-// #menuToggle:checked ~ .sidebar{
-// margin-right:0px;
-
-// }
+#slideinmenu{
+  text-align: center;
+  li{
+    border-bottom:1px solid gray;
+    padding:20px;
+    text-decoration: none;
+  }
+}
 
 .slideinsidebar{
 right:0px;
@@ -126,6 +130,13 @@ right:0px;
 .slideinwrapper{
 right:250px;
 }
+
+// #menuToggle:checked ~ .sidebar{
+// margin-right:0px;
+
+// }
+
+
 /////////////////////////////////////////////
 
 

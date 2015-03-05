@@ -7,9 +7,6 @@ $(document).ready(function() {
     // document.write('hellowodl');
     $(".wrapper").toggleClass('slideinwrapper');
     $(".sidebar").toggleClass('slideinsidebar');
-
-
-
   });
 
 
