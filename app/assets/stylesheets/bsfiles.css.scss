@@ -17,6 +17,7 @@ html {
   margin-bottom:0px;
 }
 
+
 .mainheader{
   color:white;
   font-size:60px;
@@ -33,51 +34,98 @@ html {
 
 ////////////--side bar stuff--////////////////////
 
-#menuToggle{
-  display:none;
+// #menuToggle{
+//   // display:none;
+// }
+
+// #menu-icon{
+//   // color:white;  
+//   float:right;
+//   cursor: pointer;
+// }
+
+// #slideinmenu{
+//   // display: inline-block;
+//   width: 240px;
+//   height:510px;
+//   // margin-top:-22px;
+//   // height:100%;
+//   position: absolute;
+//   background-color: white;
+//   // left: -240px;
+//   right:-241px;
+//   -webkit-transition: all .2s ease-in-out;
+//   -moz-transition: all .2s ease-in-out;
+//   -ms-transition: all .2s ease-in-out;
+//   -o-transition: all .2s ease-in-out;
+//     // z-index: 99;
+//   // top:51px;
+//   text-align: center; 
+//   color:gray;
+//   margin-top:35px;
+
+//   }
+
+// #menuToggle:checked ~ #slideinmenu{
+//    position: absolute;
+//     right:0px;
+//   // width: 240px;
+//   // height:540px;
+// }
+
+// #mainpagediv{ 
+//   // margin-left:0px;
+//   // margin-left:100px;
+//   min-height:100vh;
+//   width:100vw;
+//   // position:relative;
+
+//   // margin-left:0px;
+// }
+
+// #menuToggle:checked ~ #mainpagediv{
+//   position: absolute;
+//   margin-left:-240px;
+//   // margin-left: 540px;
+//   -webkit-transition: all .2s ease-in-out;
+//   -moz-transition: all .2s ease-in-out;
+//   -ms-transition: all .2s ease-in-out;
+//   -o-transition: all .2s ease-in-out; 
+// }
+
+#sidebartoggle{
+  cursor: pointer;
 }
 
-#menu-icon{
-  // color:white;  
-  float:right;
+.sidebar{
+  width:250px;
+  height:100vh;
+  // float:right;
+  right:-250px;
+  // margin-right:-251px;
+  // margin-top:-510px;
+  background-color:gray;
+  position:absolute;
+  top:0px;
 }
 
-#slideinmenu{
-  width: 240px;
-  height:540px;
-  // height:100%;
-  position: absolute;
-  background-color: black;
-  left: -240px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-    // z-index: 99;
-  top:51px;
-  text-align: center; 
-  color:white;
-
-  }
-
-#menuToggle:checked ~ #slideinmenu{
-  position: absolute; left:-1;
-  width: 240px;
-  height:540px;
+.wrapper{
+  position:absolute;
+  width:100vw;
 }
 
-#mainpagediv{
-  position: relative; left:0;
+// #menuToggle:checked ~ .sidebar{
+// margin-right:0px;
+
+// }
+
+.slideinsidebar{
+right:0px;
 }
 
-#menuToggle:checked ~ #mainpagediv{
-  left: 240px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out; 
+.slideinwrapper{
+right:250px;
 }
-
 /////////////////////////////////////////////
 
 

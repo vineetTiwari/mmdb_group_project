@@ -1,4 +1,3 @@
-<h1>#WhatsTrending?<h1><br><hr>
 
 <!-- works -->
 <%#@songs.each do |song| %>
@@ -10,25 +9,24 @@
 
 
 <!-- works -->
-<%#=all_counts = @songs.group(:songid).count%>
-<%#=all_counts.max%>
-<hr>
-
-Trending Songs
-<hr>
-
 <%all_counts = @songs.group(:songid).count%>
+<%all_counts.max%>
+
+
+<%#all_counts = @songs.group(:songid).count%>
 <!-- <br><br> "the highest value is:" -->
 <%#=maxvalue = all_counts.max%>
-<%all_counts.each do |x,y|%>
-  <%if y == all_counts.values.max%>
-  songid:<%=songkeys=x%>,
-  song name:<%=songname=@songs.find_by(songid: songkeys).name%><br>
-  <%=image_tag songartwork = @songs.find_by(songid: songkeys).artwork%>
-  number of collections this song is included in: <%=y%><br><hr>
-  <%end%>
-  <%end%>
-<hr><br><br><br><br>
+<%#all_counts.each do |x,y|%>
+  <%#if y == all_counts.values.max%>
+  <!-- songid:<%#=songkeys=x%>, -->
+  <!-- song name:<%#=songname=@songs.find_by(songid: songkeys).name%><br> -->
+  <%#=image_tag songartwork = @songs.find_by(songid: songkeys).artwork%>
+  <!-- number of collections this song is included in: <%#=y%><br><hr> -->
+  <%#end%>
+  <%#end%>
+
+
+<!-- <hr><br><br><br><br> -->
 
 <!-- Trending Albums -->
 <%#all_album_counts = @songs.group(:albumid).count%>
@@ -60,3 +58,45 @@ Trending Songs
 
 <!-- max = my_hash.values.max
 Hash[my_hash.select { |k, v| v == max}] -->
+
+
+<%#all_counts = @songs.group(:songid).count%>
+<!-- <br><br> "the highest value is:" -->
+<%#=maxvalue = all_counts.max%>
+<%#all_counts.each do |x,y|%>
+  <!-- songid:<%#=songkeys=x%>, -->
+  <!-- song name:<%#=songname=@songs.find_by(songid: songkeys).name%><br> -->
+  <%#=image_tag songartwork = @songs.find_by(songid: songkeys).artwork%>
+  <!-- number of collections this song is included in: <%#=y%><br><hr> -->
+  <%#end%>
+  <!-- <%#end%> -->
+
+
+
+
+  <h1>#WhatsTrending?<h1><br><hr>
+
+<div class="row">
+  <div class="col-md-9">
+    <table class="table table-striped table-bordered table-hover table-condensed">
+      <tr>
+        <th class="center">ID</th>
+        <th class="center">Name</th>
+        <th class="center">Album Artwork</th>
+        <th class="center">Score</th>
+      </tr>
+      
+      <%all_counts.each do |x,y|%>
+          <%if y == all_counts.values.max%>
+        <tr>
+          <td class="center"><%=songkeys=x%></td>
+          <td class="center"><%=songname=@songs.find_by(songid:songkeys).name%></td>
+          <td class="center"><%=image_tag songartwork=@songs.find_by(songid:songkeys).artwork%></td>
+          <td><%=y%></td>
+         </tr>
+      <% end %>
+      <% end %>
+    </table>
+  </div>
+</div>
+

@@ -21,8 +21,6 @@
               <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
             </ul>
           </li>
-          <input type ="checkbox" id="menuToggle">
-          <label for="menuToggle" id="menu-icon">&#9776;</label>  
           <nav id="slideinmenu">
             <li><%=link_to current_user.name, songs_path %>
             </li> 
@@ -35,27 +33,15 @@
             <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%>
             </li>
           </nav> 
+          <span id="sidebartoggle">&#9776;</span>
         <% else %>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Enter
           </button>
           <%= render 'devise/sessions/form' %>
         <% end %>
-      </ul>
+       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
 

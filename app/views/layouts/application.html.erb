@@ -12,8 +12,9 @@
 
   </head>
   <body>
-    <%= render 'layouts/header' %>
-    <!-- <div class= 'container'> -->
+    <div class="wrapper">
+      <%= render 'layouts/header' %>
+      <!-- <div class= 'container'> -->
       <% if notice %>
         <p class="alert alert-success container center"><%= notice %></p>
       <% end %>
@@ -21,5 +22,20 @@
         <p class="alert alert-danger container center"><%= alert %></p>
       <% end %>
     <%= yield %>
+   </div>
+
+  <div class="sidebar">
+    <nav id="slideinmenu">
+      <%if user_signed_in? %>
+        <%if current_user.profile_image_url.present? %>
+          <li><%= image_tag current_user.profile_image_url %></li>
+        <%end%>
+        <li><%= link_to current_user.name, songs_path %></li>
+        <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+        <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
+      <%end%>
+    </nav> 
+  </div>
+
   </body>
 </html>
