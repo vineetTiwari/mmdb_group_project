@@ -1,28 +1,30 @@
-<div class="rbody">
-<!-- <div id="mainpagediv center"> -->
-<div id="mainpagediv">
-<h1 class="center mainheader"> mymusicdatabase.</h1><hr>
-<h2 class="center mainheader2"> search all your favourite songs below</h1>
+<div class="container">
+  <div class="rbody">
+    <!-- <div id="mainpagediv center"> -->
+    <div id="mainpagediv">
+      <h1 class="center mainheader"> mymusicdatabase.</h1><hr>
+      <h2 class="center mainheader2"> search all your favourite songs below</h2>
 
 
-  <div class="well index-well">  
-    <%= form_tag url: submit_search_path, method: :post do %>
-      <div class="row">
-        <div class="form-group">
-           <div class="col-md-10">  
-            <input  type="text" class="form-control" name="usersearch" 
-                    placeholder=" Search" aria-describedby="basic-addon2" 
-                    required/>
+      <div class="well index-well">  
+        <%= form_tag url: submit_search_path, method: :post do %>
+          <div class="row">
+            <div class="form-group">
+               <div class="col-md-10">  
+                <input  type="text" class="form-control" name="usersearch" 
+                        placeholder=" Search" aria-describedby="basic-addon2" 
+                        required/>
+                </div>
+                <div class="col-md-2">
+                <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-2">
-            <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-          </div>
-        </div>
-    <%end%>
+        <%end%>
+      </div>
+      <%= link_to "Donate", new_charge_path, class:"btn btn-success" %>
+      <%= link_to "Whats Trending?", trending_index_path%>
+    </div>
   </div>
-<%= link_to "Donate", new_charge_path, class:"btn btn-success" %>
-<%= link_to "Whats Trending?", trending_index_path%>
-</div>
 </div>
 
