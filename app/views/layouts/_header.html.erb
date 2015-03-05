@@ -16,37 +16,13 @@
         <%if user_signed_in? %>
           <%=link_to current_user.name, songs_path %>
 
+  <%#if user_signed_in? %>
+    <!-- <input type ="checkbox" class="menuToggle"> -->
+    <!-- <label for="menuToggle" class="menuToggle">&#9776;</label>   -->
+  <%#end%>
 
-
-
-
-<%if user_signed_in? %>
-  <input type ="checkbox" id="menuToggle">
-  <label for="menuToggle" id="menu-icon">&#9776;</label>  
-<%end%>
-
-<nav id="slideinmenu">
-  <% if user_signed_in? %>
-    <li><%=link_to current_user.name, songs_path %>
-    </li> 
-      <%if current_user.profile_image_url.present? %>
-        <li><%= image_tag current_user.profile_image_url %>
-        <li>
-      <%end%>
-    <li><%= link_to 'Edit profile', edit_user_registration_path %>
-    </li>
-    <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%>
-    </li>
-  <%end%>
-</nav> 
-
-
-
-
-
-
-
-          <% else %>
+    <span id="sidebartoggle">&#9776;</span>
+    <% else %>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Enter
           </button>

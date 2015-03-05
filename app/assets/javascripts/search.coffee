@@ -2,6 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
+  return if typeof(Stripe) == "undefined"
   Stripe.setPublishableKey($('meta[name="stripe_key"]').attr('content'))
   payment.setupForm()
 
