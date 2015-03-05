@@ -93,7 +93,7 @@ html {
 //   -o-transition: all .2s ease-in-out; 
 // }
 
-#sidebartoggle{
+.sidebartoggle{
   cursor: pointer;
 }
 
@@ -107,28 +107,34 @@ html {
   background-color:black;
   position:absolute;
   top:0px;
+  transition: right 0.3s;
 }
 
 .wrapper{
   position:absolute;
   width:100vw;
+  right: 0;
+  transition: right 0.3s;
+
 }
 
 #slideinmenu{
   text-align: center;
+
   li{
     border-bottom:1px solid gray;
     padding:20px;
-    text-decoration: none;
+    list-style-type: none;
+
   }
 }
 
 .slideinsidebar{
-right:0px;
+  right:0px;
 }
 
 .slideinwrapper{
-right:250px;
+  right:250px;
 }
 
 // #menuToggle:checked ~ .sidebar{

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#sidebartoggle').click(function(){
+    $('.sidebartoggle').click(function(){
     // $(".wrapper").animate({
     //   right: '250px'
      // console.log('helloworld');
