@@ -13,7 +13,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in? %>
-          <%=link_to current_user.name, songs_path %>
           <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -23,7 +22,7 @@
           </li> -->
           <span class="sidebartoggle">&#9776;</span>
         <% else %>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn btn-default btn-enter" data-toggle="modal" data-target="#myModal">
             Enter
           </button>
           <%= render 'devise/sessions/form' %>

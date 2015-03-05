@@ -8,11 +8,11 @@
       <div class="modal-body">
         <div class="row">
         <div class="col-md-6">
+          <br>
           <li> <%=link_to image_tag('fbbtn.jpg', :id => 'facebookbtn'), user_omniauth_authorize_path(provider: :facebook)%></li>
+          <br>
+          <br>
           <li><%=link_to image_tag('twitterbtn.jpg', :id => 'twitterbtn'), user_omniauth_authorize_path(provider: :twitter)%></li>
-          <div class="form-group">
-            <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-default" %>
-          </div>
         </div>
         <div class="col-md-6">
             <%= form_for((@user || User.new), url: session_path(:user)) do |f| %>

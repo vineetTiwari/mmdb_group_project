@@ -21,8 +21,9 @@
       <% if alert %>
         <p class="alert alert-danger container center"><%= alert %></p>
       <% end %>
-    <%= yield %>
-   </div>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
 
   <div class="sidebar">
     <nav id="slideinmenu">
@@ -39,9 +40,10 @@
       <%end%></li>
         <span class="sidebartoggle center">&#9776;</span>
 
-      <%end%>
-    </nav> 
-  </div>
+
+        <%end%>
+      </nav> 
+    </div>
 
   </body>
 </html>
