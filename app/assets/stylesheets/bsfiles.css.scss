@@ -18,10 +18,15 @@ html {
 }
 
 
-.fa-search-plus{
+.fa-search{
   margin-top:20px;
-  cursor: pointer;
 }
+
+#note{
+  color:blue;
+  text-align: center;
+}
+
 #trending{
   color:#3399FF;
   font-weight:900;
@@ -160,12 +165,20 @@ padding-right:5px;
   color:black;
 }
 
+.navbar-right{
+  padding:10px;
+}
+
 .navbar {
   border-radius: 0px;
 }
 
 .thumbnail {
   background-color: rgba(248, 248, 248, 0.75);
+}
+
+.fa-user{
+  padding-right:5px;
 }
 
 td > img {

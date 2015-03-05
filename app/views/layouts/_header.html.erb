@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <i class="fa fa-search-plus"></i>
+      <i class="fa fa-search"></i>
       <%=link_to 'mmdb', root_path, class:"navbar-brand"%>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -21,6 +21,8 @@
               <li><%#= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
             </ul>
           </li> -->
+          <span><i class="fa fa-user fa-2x"></i></span>
+
           <span class="sidebartoggle">&#9776;</span>
         <% else %>
           <button type="button" class="btn btn-default btn-enter" data-toggle="modal" data-target="#myModal">

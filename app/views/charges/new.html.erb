@@ -3,7 +3,7 @@
     <%= form_tag charges_path do %>
       <label class="amount">
         <!-- <span>Amount: $2.00</span><br> -->
-        <div class="center"><input class="form-control" name="customamount" placeholder="$"></input>
+        <div class="center"><input class="form-control donation" name="customamount" placeholder="$"></input>
       </label><div>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= ENV["STRIPE_PUBLIC_KEY"] %>"
@@ -14,11 +14,11 @@
   </div>
   <div class="well charge-well">
    
-mumusicdatabase represents ambition and a strong passion for music. This web app was made as a project during a 2 month rails bootcamp. Prior to this, no previous app making knowledge. Likely, the road ends here.<br>
+mumusicdatabase represents ambition and a strong passion for music. This web app was made as a project during a 2 month ruby on rails bootcamp. Prior to this, we had no previous app making knowledge. As we look forward to new opportunities in the tech world - Likely, the road for this app ends here.<br><hr>
 
-Donating represents a token of support and will give the makers of this app great incentive to continue adding features to the app. The goal is to allow users to export their personal databases to their Spotify, Rdio, or Songza playlists so they can play their songs on such streaming platforms.<br> 
+Donating represents a token of support and will give the makers of this app great incentive to continue adding features to this app. The goal is to allow users to export their personal databases to their Spotify, Rdio, or Songza playlists so they can play their songs on such streaming platforms.<br><hr>
 
 Maybe even allowing users to play songs right on this app- make this happen by donating!
 
-  </div>
+</div>
 </div>
