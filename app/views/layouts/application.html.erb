@@ -21,23 +21,24 @@
       <% if alert %>
         <p class="alert alert-danger container center"><%= alert %></p>
       <% end %>
-    <%= yield %>
-   </div>
+      <%= yield %>
+      <%= render 'layouts/fotter' %>
+    </div>
 
-  <div class="sidebar">
-    <nav id="slideinmenu">
-      <%if user_signed_in? %>
-        <%if current_user.profile_image_url.present? %>
-          <li><%= image_tag current_user.profile_image_url %></li>
+    <div class="sidebar">
+      <nav id="slideinmenu">
+        <%if user_signed_in? %>
+          <%if current_user.profile_image_url.present? %>
+            <li><%= image_tag current_user.profile_image_url %></li>
+          <%end%>
+          <li><%= link_to current_user.name, songs_path %></li>
+          <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+          <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
+          <span class="sidebartoggle center">&#9776;</span>
+
         <%end%>
-        <li><%= link_to current_user.name, songs_path %></li>
-        <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-        <li><%= link_to 'Log out',destroy_user_session_path, method: :delete%></li>
-        <span class="sidebartoggle center">&#9776;</span>
-
-      <%end%>
-    </nav> 
-  </div>
+      </nav> 
+    </div>
 
   </body>
 </html>
