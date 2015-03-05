@@ -6,7 +6,12 @@ class SongsController < ApplicationController
       if user_signed_in? == true
         @songs=current_user.songs.order(rating: :desc)          
         @songs = @songs.search(params[:searchmydb])  if params[:searchmydb].present?
-        render params[:listing] ? "listing" : "index"
+        if @songs.empty?
+          flash[:alert] = "Sorry the song is not in your list"
+          redirect_to songs_path
+        else
+          render params[:listing] ? "listing" : "index"
+        end
       else
         redirect_to root_path
       end

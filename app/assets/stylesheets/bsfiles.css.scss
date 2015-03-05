@@ -17,93 +17,52 @@ html {
   margin-bottom:0px;
 }
 
+#trending{
+  color:#3399FF;
+  font-weight:900;
+  text-align: center;
+}
 
 .mainheader{
   color:white;
-  font-size:60px;
+  font-size:80px;
   font-weight:900;
   margin-top:0px;
+  margin-bottom: 0px;
 }
 
 .mainheader2{
-  font-size:20px;
-  color:white;
+  font-size:30px;
+  font-weight:900;
+  color:#3399FF ;
   margin-top:0px;
+  // border:solid 1px white;
+
+   // background-color: rgba(248, 248, 248, 0.51);
+  // border-color: rgba(248, 248, 248, 0.51);
 }
 
 
-////////////--side bar stuff--////////////////////
-
-// #menuToggle{
-//   // display:none;
-// }
-
-// #menu-icon{
-//   // color:white;  
-//   float:right;
-//   cursor: pointer;
-// }
-
-// #slideinmenu{
-//   // display: inline-block;
-//   width: 240px;
-//   height:510px;
-//   // margin-top:-22px;
-//   // height:100%;
-//   position: absolute;
-//   background-color: white;
-//   // left: -240px;
-//   right:-241px;
-//   -webkit-transition: all .2s ease-in-out;
-//   -moz-transition: all .2s ease-in-out;
-//   -ms-transition: all .2s ease-in-out;
-//   -o-transition: all .2s ease-in-out;
-//     // z-index: 99;
-//   // top:51px;
-//   text-align: center; 
-//   color:gray;
-//   margin-top:35px;
-
-//   }
-
-// #menuToggle:checked ~ #slideinmenu{
-//    position: absolute;
-//     right:0px;
-//   // width: 240px;
-//   // height:540px;
-// }
-
-// #mainpagediv{ 
-//   // margin-left:0px;
-//   // margin-left:100px;
-//   min-height:100vh;
-//   width:100vw;
-//   // position:relative;
-
-//   // margin-left:0px;
-// }
-
-// #menuToggle:checked ~ #mainpagediv{
-//   position: absolute;
-//   margin-left:-240px;
-//   // margin-left: 540px;
-//   -webkit-transition: all .2s ease-in-out;
-//   -moz-transition: all .2s ease-in-out;
-//   -ms-transition: all .2s ease-in-out;
-//   -o-transition: all .2s ease-in-out; 
-// }
-
 .sidebartoggle{
   cursor: pointer;
+  color:gray;
+  font-size:25px;
+  margin-top:-20px;
+  border:1px solid;
+
+padding-left:5px;
+padding-right:5px;
+}
+
+.btn2{
+  // background-color: gray;
+  border:solid 1px gray;
 }
 
 .sidebar{
   width:250px;
   height:100vh;
-  // float:right;
   right:-250px;
-  // margin-right:-251px;
-  // margin-top:-510px;
   background-color:black;
   position:absolute;
   top:0px;
@@ -137,13 +96,6 @@ html {
   right:250px;
 }
 
-// #menuToggle:checked ~ .sidebar{
-// margin-right:0px;
-
-// }
-
-
-/////////////////////////////////////////////
 
 
 #twitterbtn{
@@ -233,4 +185,8 @@ ul > img {
 .btn-enter {
   margin-top: 8px;
   border-color: white;
+}
+
+.footer{
+  background-color: gray;
 }

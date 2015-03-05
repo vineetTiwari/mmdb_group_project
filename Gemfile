@@ -21,6 +21,7 @@ ruby '2.2.0'
   gem 'ratyrate'
   gem 'font-awesome-rails'
 
+gem "quiet_assets"
 group :production do
   gem 'rails_12factor'
 end
