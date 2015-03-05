@@ -34,10 +34,10 @@ html {
 }
 
 .mainheader{
-  color:white;
+  color:gray;
   font-size:80px;
   font-weight:900;
-  margin-top:0px;
+  margin-top:60px;
   margin-bottom: 0px;
 }
 
@@ -139,7 +139,7 @@ padding-right:5px;
   background-color: rgba(248, 248, 248, 0.51);
   border-color: rgba(248, 248, 248, 0.51);
   margin-bottom: 100px;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .charge-well {
@@ -208,4 +208,6 @@ ul > img {
 
 .footer{
   background-color: gray;
+  position:fixed;
+  bottom:0px;
 }
