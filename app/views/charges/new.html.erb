@@ -1,13 +1,12 @@
- 
-  <div class="well charge-well">
-
-
-     <div class="container" id="paymentpage">
+<div class="well charge-well">
+  <div class="container" id="paymentpage">
     <%= form_tag charges_path do %>
       <label class="amount">
         <!-- <span>Amount: $2.00</span><br> -->
-        <div class="center"><input class="form-control donation" name="customamount" placeholder="$"></input>
-      </label><div>
+        <div class="center">
+          <input class="form-control donation" name="customamount" placeholder="$"></input>
+        </div>
+      </label>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= ENV["STRIPE_PUBLIC_KEY"] %>"
         data-description="Donate"
@@ -15,19 +14,20 @@
       </script>
     <%end%>
   </div>
-<div>
-mumusicdatabase.
- This web app represents ambition and a strong passion for music, and was made as a project during a 2 month ruby on rails bootcamp. Prior to this, we had no previous app making knowledge. As we look forward to new opportunities in the tech world - Likely, the road for this app ends here.<br><br>
-
-Donating represents a token of support and will give the makers of this app great incentive to continue adding features to this app. The goal is to allow users to export their personal databases to their Spotify, Rdio, or Songza playlists so they can play their songs on such streaming platforms.<br><br>
-
-Maybe even allowing users to play songs right on this app- make this happen by donating!
-<hr>
-Our payments are processed using "STRIPE" - a payment handling software used by many large companies, some of which can be seen below. More information on Stripe can be found at their website: https://stripe.com/ca
-</div>
-<hr>
-<div id="paidcompanies">
-<%#=image_tag ('paidcompanies.png')%>
-</div>
-
+  <div>
+    mumusicdatabase.
+     This web app represents ambition and a strong passion for music, and was made as a project during a 2 month ruby on rails bootcamp. Prior to this, we had no previous app making knowledge. As we look forward to new opportunities in the tech world - Likely, the road for this app ends here.
+     <br>
+     <br>
+    Donating represents a token of support and will give the makers of this app great incentive to continue adding features to this app. The goal is to allow users to export their personal databases to their Spotify, Rdio, or Songza playlists so they can play their songs on such streaming platforms.
+    <br>
+    <br>
+    Maybe even allowing users to play songs right on this app- make this happen by donating!
+    <hr>
+    Our payments are processed using "STRIPE" - a payment handling software used by many large companies, some of which can be seen below. More information on Stripe can be found at their website: https://stripe.com/ca
+  </div>
+  <hr>
+  <div id="paidcompanies">
+    <%#=image_tag ('paidcompanies.png')%>
+  </div>
 </div>

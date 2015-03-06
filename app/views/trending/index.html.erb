@@ -1,14 +1,9 @@
+
 <div class="container">
-
-
-
   <!-- works -->
   <%all_counts = @songs.group(:songid).count%>
   <%all_counts.max%>
-
-
- 
-<h1 id="trending">#WhatsTrending?</h1><hr>
+  <h1 id="trending">#WhatsTrending?</h1><hr>
   <div class="row">
     <div class="col-md-12">
       <table class="table table-striped table-bordered table-hover table-condensed">
@@ -18,18 +13,19 @@
           <th class="center">Album Artwork</th>
           <th class="center">Score</th>
         </tr>
-        
-        <%all_counts.each do |x,y|%>
-            <%if y == all_counts.values.max%>
+        <% all_counts.each do |x,y| %>
+          <%if y == all_counts.values.max%>
           <tr>
             <td class="center"><%=songkeys=x%></td>
             <td class="center"><%=songname=@songs.find_by(songid:songkeys).name%></td>
             <td class="center"><%=image_tag songartwork=@songs.find_by(songid:songkeys).artwork%></td>
             <td><%=y%></td>
-           </tr>
-        <% end %>
+          </tr>
+          <% end %>
         <% end %>
       </table>
       <p id="note">NOTE:&nbsp 'Score' is calculated based on the number of user databases each of the songs above are present in</p>
     </div>
+  </div>
 </div>
+
