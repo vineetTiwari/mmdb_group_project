@@ -1,11 +1,11 @@
 <div class="well charge-well">
-  <div class="container" id="paymentpage">
+  <div class="container center" id="paymentpage">
     <%= form_tag charges_path do %>
       <label class="amount">
         <!-- <span>Amount: $2.00</span><br> -->
         <div class="center">
           <input class="form-control donation" name="customamount" placeholder="$"></input>
-        </div>
+        </div><hr>
       </label>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= ENV["STRIPE_PUBLIC_KEY"] %>"
